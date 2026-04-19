@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum de Fotos — Ubher Amao Atauchi</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .foto-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .foto-item:hover .foto-label { background: rgba(247,148,29,0.85); }
+    .galeria-header {
+      display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 16px;
+    }
+    .filtro-btn {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.7);
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: 'Space Mono', monospace;
+      transition: all 0.2s;
+    }
+    .filtro-btn.active, .filtro-btn:hover {
+      background: var(--naranja);
+      color: #fff;
+      border-color: var(--naranja);
+    }
+  </style>
+</head>
+<body>
+<div class="contenedor">
+
+  <header>
+    <div class="header-texto">
+      <h1>Ubher Amao Atauchi</h1>
+      <p>Estudiante de Ingeniería de Sistemas — UTEA</p>
+    </div>
+    <span class="header-badge">📸 Álbum de Fotos</span>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="biografia.html">Biografía</a></li>
+      <li><a href="familia.html">Familia</a></li>
+      <li><a href="estudios.html">Estudios</a></li>
+      <li><a href="materiales.html">Materiales</a></li>
+      <li><a href="album.html" class="activo">Álbum</a></li>
+      <li><a href="descargas.html">Descargas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="contenido-central">
+    <div class="main-content">
+
+      <div class="hero">
+        <h2>Álbum de Fotos 📸</h2>
+        <p>Momentos especiales de mi vida personal, familiar y académica.</p>
+      </div>
+
+      <!-- GALERÍA -->
+      <div class="card-oscura">
+        <div class="galeria-header">
+          <h2 style="color:#fff;margin:0;">📷 Galería personal</h2>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;">
+            <button class="filtro-btn active">Todas</button>
+            <button class="filtro-btn">Personal</button>
+            <button class="filtro-btn">Familia</button>
+            <button class="filtro-btn">Universidad</button>
+          </div>
+        </div>
+
+        <div class="grid-fotos">
+          <!-- FOTO 1 -->
+        <div class="foto-item">
+          <img src="../assets/img/foto_2.jpg" alt="Mi hogar en Perú">
+          <div class="foto-label">Mi hogar — Perú</div>
+        </div>
+
+          <!-- FOTO 2 -->
+          <div class="foto-item">
+            <img src="../assets/img/foto_1.jpg" alt="paisaje andino">
+            <div class="foto-label">paisaje andino — Perú</div>
+          </div>
+
+          <!-- FOTO 3 -->
+          <div class="foto-item">
+            <img src="../assets/img/foto_3.webp" alt="campus utea">
+            <div class="foto-label">campus utea</div>
+          </div>
+
+          <!-- FOTO 4 -->
+          <div class="foto-item">
+            <img src="../assets/img/foto_4.jpg" alt="mi familia">
+            <div class="foto-label">mi familia</div>
+          </div>
+
+          <!-- FOTO 5 -->
+          <div class="foto-item">
+            <img src="../assets/img/foto_5.avif" alt="programando">
+            <div class="foto-label">programando</div>
+          </div>
+
+          <!-- FOTO 6 -->
+            <div class="foto-item">
+              <img src="../assets/img/foto_6.webp" alt="jornada de estudio">
+              <div class="foto-label">jornada de estudio</div>
+            </div>
+
+          <!-- FOTO 7 -->
+          <div class="foto-item">
+            <img src="../assets/img/foto_7.jpg" alt="amanecer de los andes">
+            <div class="foto-label">amanecer de los andes</div>
+          </div>
+
+          <!-- FOTO 8 -->
+            <div class="foto-item">
+              <img src="../assets/img/foto_8.jpg" alt="celebracion">
+              <div class="foto-label">celebracion</div>
+            </div>
+
+          <!-- FOTO 9 -->
+          <div class="foto-item">
+            <img src="../assets/img/foto_8.webp" alt="aula">
+            <div class="foto-label">aula</div>
+          </div>
+
+          <!-- FOTO 10 -->
+            <div class="foto-item" style="background:linear-gradient(135deg,#2e1a2e,#f7941d33);">
+              <div class="foto-placeholder">
+                <span class="icono">⌨️</span>
+                <span>Primer proyecto web</span>
+                <span style="font-size:10px;opacity:.5;">foto_10.jpg</span>
+              </div>
+              <div class="foto-label">Mi primer proyecto web</div>
+            </div>
+        </div>
+
+      </div>
+
+      <!-- VIDEO -->
+      <div class="card">
+        <h2>🎬 Video de presentación</h2>
+        <p style="margin-bottom:16px;">
+          A continuación, un video introductorio sobre el curso de Programación Web
+        </p>
+      
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
+      
+          <video controls style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+      
+            <source src="../assets/downloads/video.mp4" type="video/mp4">
+
+      
+          </video>
+      
+        </div>
+      </div>
+
+    </div>
+
+    <aside>
+      <div class="aside-card">
+        <h3>🔍 Buscador</h3>
+        <div class="buscador">
+          <input type="text" id="inputBusqueda" placeholder="Buscar...">
+          <button class="btn btn-verde" id="btnBuscar">Buscar</button>
+          <div id="resultadoBusqueda"></div>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h3>📊 Galería</h3>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;justify-content:space-between;font-size:13px;">
+            <span style="color:rgba(255,255,255,0.6);">Total de fotos</span>
+            <span style="color:var(--verde);font-weight:700;">10</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;">
+            <span style="color:rgba(255,255,255,0.6);">Videos</span>
+            <span style="color:var(--naranja);font-weight:700;">1</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:13px;">
+            <span style="color:rgba(255,255,255,0.6);">Categorías</span>
+            <span style="color:var(--cyan);font-weight:700;">3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h3>🔗 Ver más</h3>
+        <div class="enlaces-rapidos">
+          <a href="familia.html"><span class="dot"></span>Página de Familia</a>
+          <a href="biografia.html"><span class="dot"></span>Biografía</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p><strong>Universidad Tecnológica de los Andes</strong></p>
+    <p>Escuela Profesional de Ingeniería de Sistemas</p>
+    <p>© 2026 — Ubher Amao Atauchi</p>
+  </footer>
+
+</div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

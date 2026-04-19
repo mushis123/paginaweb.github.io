@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubher Amao Atauchi — Inicio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="contenedor">
+
+  <header>
+    <div class="header-texto">
+      <h1>Ubher Amao Atauchi</h1>
+      <p>Estudiante de Ingeniería de Sistemas — UTEA</p>
+    </div>
+    <span class="header-badge">📍 Perú · 2026</span>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="activo">Inicio</a></li>
+      <li><a href="pages/biografia.html">Biografía</a></li>
+      <li><a href="pages/familia.html">Familia</a></li>
+      <li><a href="pages/estudios.html">Estudios</a></li>
+      <li><a href="pages/materiales.html">Materiales</a></li>
+      <li><a href="pages/album.html">Álbum</a></li>
+      <li><a href="pages/descargas.html">Descargas</a></li>
+      <li><a href="pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="contenido-central">
+    <div class="main-content">
+
+      <!-- HERO -->
+      <div class="hero">
+        <h2>¡Hola, soy Ubher! 👋</h2>
+        <p>Bienvenido a mi espacio personal en la web. Aquí encontrarás información sobre mi vida, mi familia, mis estudios en Ingeniería de Sistemas y los materiales del curso de Programación Web.</p>
+        <div style="margin-top: 16px;">
+          <span class="tag tag-naranja">HTML5</span>
+          <span class="tag tag-verde">CSS3</span>
+          <span class="tag tag-cyan">Programación Web</span>
+          <span class="tag tag-rosa">UTEA</span>
+        </div>
+      </div>
+
+      <!-- ACCESOS RÁPIDOS -->
+      <div class="card">
+        <h2>🗺️ Explora el sitio</h2>
+        <div class="grid-2">
+          <a href="pages/biografia.html" style="text-decoration:none;">
+            <div class="card-naranja" style="padding:18px 20px;">
+              <h3 style="margin-bottom:6px;">📝 Biografía</h3>
+              <p style="font-size:13px;opacity:.85;">Mi historia personal, logros y metas.</p>
+            </div>
+          </a>
+          <a href="pages/familia.html" style="text-decoration:none;">
+            <div class="card-verde" style="padding:18px 20px;">
+              <h3 style="margin-bottom:6px;">👨‍👩‍👦 Familia</h3>
+              <p style="font-size:13px;opacity:.75;">Conoce a las personas más importantes en mi vida.</p>
+            </div>
+          </a>
+          <a href="pages/estudios.html" style="text-decoration:none;">
+            <div class="card-rosa" style="padding:18px 20px;">
+              <h3 style="margin-bottom:6px;">🎓 Estudios</h3>
+              <p style="font-size:13px;opacity:.85;">Mi recorrido académico en la UTEA.</p>
+            </div>
+          </a>
+          <a href="pages/materiales.html" style="text-decoration:none;">
+            <div class="card-cyan" style="padding:18px 20px;">
+              <h3 style="margin-bottom:6px;">📚 Materiales</h3>
+              <p style="font-size:13px;opacity:.75;">Contenido del curso de Programación Web.</p>
+            </div>
+          </a>
+          <a href="pages/album.html" style="text-decoration:none;">
+            <div class="card-oscura" style="padding:18px 20px;">
+              <h3 style="margin-bottom:6px;color:var(--naranja);">📸 Álbum</h3>
+              <p style="font-size:13px;color:rgba(255,255,255,0.65);">Galería fotográfica personal.</p>
+            </div>
+          </a>
+          <a href="pages/descargas.html" style="text-decoration:none;">
+            <div class="card-oscura" style="padding:18px 20px;border:1px solid rgba(65,232,109,0.3);">
+              <h3 style="margin-bottom:6px;color:var(--verde);">⬇️ Descargas</h3>
+              <p style="font-size:13px;color:rgba(255,255,255,0.65);">PDFs y recursos del curso.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- SOBRE MÍ RESUMIDO -->
+      <div class="card">
+        <h2>👤 Sobre mí</h2>
+        <p>Soy estudiante de la <strong>Universidad Tecnológica de los Andes (UTEA)</strong>, cursando la carrera de Ingeniería de Sistemas desde el año 2021. Me apasiona el desarrollo web, la programación y la tecnología en general. Este sitio es parte de mi proyecto del curso de <strong>Programación Web</strong>.</p>
+        <div style="margin-top:16px;">
+          <a href="pages/biografia.html" class="btn btn-naranja">Leer biografía completa →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ASIDE -->
+    <aside>
+      <div class="aside-card">
+        <h3>🔍 Buscador</h3>
+        <div class="buscador">
+          <input type="text" id="inputBusqueda" placeholder="Buscar en el sitio...">
+          <button class="btn btn-verde" id="btnBuscar">Buscar</button>
+          <div id="resultadoBusqueda"></div>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h3>🔗 Páginas</h3>
+        <div class="enlaces-rapidos">
+          <a href="index.html"><span class="dot"></span>Inicio</a>
+          <a href="pages/biografia.html"><span class="dot"></span>Biografía</a>
+          <a href="pages/familia.html"><span class="dot"></span>Familia</a>
+          <a href="pages/estudios.html"><span class="dot"></span>Estudios</a>
+          <a href="pages/materiales.html"><span class="dot"></span>Materiales</a>
+          <a href="pages/album.html"><span class="dot"></span>Álbum de Fotos</a>
+          <a href="pages/descargas.html"><span class="dot"></span>Descargas</a>
+          <a href="pages/contacto.html"><span class="dot"></span>Contacto</a>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h3>🌐 Referencias externas</h3>
+        <div class="enlaces-rapidos">
+          <a href="https://developer.mozilla.org/es/" target="_blank"><span class="dot"></span>MDN Web Docs</a>
+          <a href="https://www.w3schools.com" target="_blank"><span class="dot"></span>W3Schools</a>
+          <a href="https://github.com" target="_blank"><span class="dot"></span>GitHub</a>
+          <a href="https://css-tricks.com" target="_blank"><span class="dot"></span>CSS-Tricks</a>
+          <a href="https://utea.edu.pe" target="_blank"><span class="dot"></span>UTEA Oficial</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p><strong>Universidad Tecnológica de los Andes</strong></p>
+    <p>Escuela Profesional de Ingeniería de Sistemas</p>
+    <p>© 2026 — Ubher Amao Atauchi</p>
+  </footer>
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

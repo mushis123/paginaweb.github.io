@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* CONTENEDOR FLEX */
+.contenedor {
+  display: flex;              /* Activa flexbox */
+  justify-content: center;    /* Centra horizontalmente */
+  align-items: center;        /* Centra verticalmente */
+  gap: 20px;                  /* Espacio entre cajas */
+  height: 200px;
+  background: #222;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* ELEMENTOS FLEX */
+.caja {
+  background: #00bcd4;
+  color: white;
+  padding: 20px;
+  width: 100px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+</style>
+  <h1>Ejemplo de Flexbox</h1>
+
+  <div class="contenedor">
+    <div class="caja">Caja 1</div>
+    <div class="caja">Caja 2</div>
+    <div class="caja">Caja 3</div>
+    <div class="caja">Caja 4</div>
+  </div>
+
+</body>
+</html>
